@@ -2,29 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h, initial-scale=1.0">
-    <title>burger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Patty Burger</title>
+    <!-- Google Fonts for modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #fff8f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #d84315;
+        }
+
+        h2, h3 {
+            color: #bf360c;
+            margin: 15px 0 10px 0;
+        }
+
+        /* Image */
+        .burger-img {
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Sections */
+        p {
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        ul, ol {
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            padding-left: 20px;
+            font-size: 1.05rem;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Container & card */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff3e0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Footer link */
+        .back-home {
+            display: block;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Button-like home link */
+        .back-home a {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .back-home a:hover {
+            background-color: #e64a19;
+        }
+
+    </style>
 </head>
 <body>
-    <a href="../index.html">home</a>
-    <h1>Beef Patty burger</h1>
-    <img src="image.png" alt="burger" height="150" width="150">
-    <h2>Description</h2>
-    <p>A freshly prepared burger with a sesame seed bun, lettuce, tomato, cheese, and a beef patty, placed on a wooden table with a rustic background
-    </p>
-    <h3>Ingredients</h3>
-    <ul>
-        <li>sesame seed bun</li>
-        <li> lettuce</li>
-        <li>tomato</li>
-        <li> cheese</li>
-        <li>beef patty</li>
-    </ul>
-    <h3>Steps to make a beef patty burger</h3>
-    <ol><li>Prepare the ingredients – wash lettuce, slice tomato, get cheese slices, and sesame seed buns ready</li>
-        <li>Cook the beef patty – season with salt & pepper, then grill or pan-fry until cooked through.</li>
-        <li>Toast the buns – lightly toast the sesame seed buns on a pan or grill for extra flavor.</li>
-        <li>Assemble the burger – place lettuce and tomato on the bottom bun, add the hot beef patty, then top with cheese.</li>
-        <li>Finish & serve – add sauces (ketchup, mayo, etc.), put on the top bun, and enjoy!</li></ol>
+    <div class="container">
+        <h1>Beef Patty Burger</h1>
+
+        <img src="image.png" alt="Beef Patty Burger" class="burger-img" width="300" height="300">
+
+        <p>A freshly prepared burger with a sesame seed bun, crisp lettuce, juicy tomato, melted cheese, and a perfectly cooked beef patty, served on a rustic wooden table.</p>
+
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Sesame seed bun</li>
+            <li>Lettuce</li>
+            <li>Tomato</li>
+            <li>Cheese</li>
+            <li>Beef patty</li>
+        </ul>
+
+        <h3>Steps to Make a Beef Patty Burger</h3>
+        <ol>
+            <li>Prepare the ingredients – wash lettuce, slice tomato, get cheese slices and buns ready.</li>
+            <li>Cook the beef patty – season with salt & pepper, then grill or pan-fry until cooked through.</li>
+            <li>Toast the buns – lightly toast the sesame seed buns on a pan or grill.</li>
+            <li>Assemble the burger – place lettuce and tomato on the bottom bun, add the hot beef patty, then top with cheese.</li>
+            <li>Finish & serve – add sauces like ketchup or mayo, put on the top bun, and enjoy!</li>
+        </ol>
+
+        <div class="back-home">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+    </div>
 </body>
 </html>
