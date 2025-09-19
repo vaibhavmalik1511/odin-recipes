@@ -3,14 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin-recipe</title>
+    <title>Odin Recipes</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #fff8f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 3rem;
+            color: #d84315;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Recipe list */
+        .recipe-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .recipe-list li {
+            background-color: #fff3e0;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .recipe-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .recipe-list a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #bf360c;
+            display: block;
+        }
+
+        .recipe-list a:hover {
+            color: #ff5722;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .recipe-list a {
+                font-size: 1.1rem;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Recipe page</h1>
-    <ol>    
-        <li><a href="recipes/burger.html">burger</a></li>
-        <li><a href="recipes/cake.html">cake</a></li>
-        <li><a href="recipes/pizza.html">pizza</a></li>
-    </ol>
+    <h1>Odin Recipes</h1>
+    <ul class="recipe-list">
+        <li><a href="recipes/burger.html">🍔 Beef Patty Burger</a></li>
+        <li><a href="recipes/cake.html">🎂 Chocolate Cake</a></li>
+        <li><a href="recipes/pizza.html">🍕 Margherita Pizza</a></li>
+    </ul>
+
+    <footer>
+        &copy; 2025 Odin Recipes. All rights reserved.
+    </footer>
 </body>
 </html>
